@@ -13,12 +13,12 @@ rl.question('', (input) => {
 });
 function daysOfAYear(num){
 	if(num%400==0){
-		console.log(366);
+		return(366);
 	}else if(num%100==0){
-		console.log(365);
+		return(365);
 	}else if(num%4==0){
-		console.log(366);
+		return(366);
 	}else{
-		console.log(365);
+		return(365);
 	}
 }
