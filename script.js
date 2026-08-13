@@ -8,8 +8,11 @@ const rl = readline.createInterface({
 
 rl.question('', (input) => {
     const num = Number(input);
-
-    if(num%400==0){
+	daysOfAYear(num);
+    rl.close();
+});
+function daysOfAYear(num){
+	if(num%400==0){
 		console.log(366);
 	}else if(num%100==0){
 		console.log(365);
@@ -18,6 +21,4 @@ rl.question('', (input) => {
 	}else{
 		console.log(365);
 	}
-
-    rl.close();
-});
+}
